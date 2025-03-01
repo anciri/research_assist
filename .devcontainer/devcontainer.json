@@ -1,11 +1,10 @@
 {
-    "name": "My Codespace",
-    "image": "mcr.microsoft.com/devcontainers/python:3.10",
-    "postCreateCommand": "pip install -r requirements.txt",
-    "customizations": {
-      "vscode": {
-        "extensions": ["ms-python.python"]
-      }
+  "name": "My Codespace",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "postCreateCommand": "pip install --upgrade pip && sudo apt update && sudo apt install -y graphviz graphviz-dev && pip install --no-cache-dir -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
     }
   }
-  
+}

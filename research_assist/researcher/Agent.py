@@ -22,7 +22,7 @@ logger = logging.getLogger("Agent")
 logger.setLevel(logging.INFO)
 
 
-def load_secrets(env_path: str = ".env") -> Dict[str, str]:
+def load_secrets(env_path: str = "research_assist/researcher/.env") -> Dict[str, str]:
     """
     Load API keys from the specified environment file.
 
